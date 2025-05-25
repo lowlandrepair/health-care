@@ -321,35 +321,36 @@
   </style>
 </head>
 
-<body>
-  <div class="pre">
-    <div class="loader"></div>
-  </div>
-  <!-- ############# Header ############# -->
-  <header class="header_container nav-h">
-    <div class="img">
-      <img id="rd-logo" style="width: 90px; height: auto;" src="images/rd.png">
+  <body>
+    <div class="pre" id="loader-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #011212; display: flex; justify-content: center; align-items: center; z-index: 99999;">
+      <div class="loader" style="border: 8px solid #f3f3f3; border-top: 8px solid #3fbcc0; border-radius: 50%; width: 60px; height: 60px; animation: spin 1s linear infinite;"></div>
     </div>
-    <nav class="nav_menu">
-      <ul class="nav_link vis-h">
-        <li><a href="index.html"><i class="bi bi-house-door-fill"></i> Home</a></li>
-        <li><a href="index.html#about"><i class="bi bi-info-circle-fill"></i> About</a></li>
-        <li><a href="news.html"><i class="bi bi-newspaper"></i> News</a></li>
-        <li><a href="dex.html"><i class="bi bi-gear"></i> Service</a></li>
-        <li><a href="index.html#patient-portal"><i class="bi bi-person"></i> Patient Portal</a></li>
-        <li><a href="Html-Files/appointment.html"><i class="bi bi-person"></i> Appointment</a></li>
-        <li><a href="index.html#doctors"><i class="bi bi-person-circle"></i> Doctor</a></li>
-        <li><a href="index.html#contact"><i class="bi bi-telephone"></i>Contact us</a></li>
-
-        <a href="./Html-Files/Doctor Experience.html"><button class="custom-button">Find a Doctor</button></a>
-      </ul>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+    <!-- ############# Header ############# -->
+    <header class="header_container nav-h">
+      <div class="img">
+        <img id="rd-logo" style="width: 90px; height: auto;" src="images/rd.png" loading="lazy">
       </div>
-    </nav>
-  </header>
+      <nav class="nav_menu">
+        <ul class="nav_link vis-h">
+          <li><a href="index.html"><i class="bi bi-house-door-fill"></i> Home</a></li>
+          <li><a href="about.html"><i class="bi bi-info-circle-fill"></i> About</a></li>
+          <li><a href="news.html"><i class="bi bi-newspaper"></i> News</a></li>
+          <li><a href="dex.html"><i class="bi bi-gear"></i> Service</a></li>
+          <li><a href="portal.html"><i class="bi bi-person"></i> Patient Portal</a></li>
+          <li><a href="appointment.html"><i class="bi bi-person"></i> Appointment</a></li>
+          <li><a href="medicine.html"><i class="bi bi-person-circle"></i> medicine</a></li>
+          <li><a href="checkup.html"><i class="bi bi-telephone"></i> checkup</a></li>
+          <li><a href="faq.html"><i class="bi bi-star"></i> faq</a></li>
+          <li><a href="log/login.html"><i class="bi bi-box-arrow-right"></i> Sign in/Sign up</a></li>
+          <a href="Html-Files/Doctor Experience.html"><button class="btn1">Find a Doctor</button></a>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
 
   <!-- ############# Header ############# -->
 
@@ -378,7 +379,7 @@
             </p>
 
             <a href="medicine.html" class="button">Get Started</a>
-            <img src="assets/img/rd.png" alt="home" class="home__image" style="display: block;" />
+            <img src="assets/img/rd.png" alt="home" class="home__image" style="display: block;" loading="lazy" />
           </div>
         </div>
       </section>
@@ -923,5 +924,19 @@ document.addEventListener("DOMContentLoaded", function() {
       var scrolled = (winScroll / height) * 100;
       document.getElementById("progressBar").style.width = scrolled + "%";
     };
+  </script>
+  <style>
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+  <script>
+    window.addEventListener('load', function() {
+      const loaderOverlay = document.getElementById('loader-overlay');
+      if (loaderOverlay) {
+        loaderOverlay.style.display = 'none';
+      }
+    });
   </script>
 </body>
