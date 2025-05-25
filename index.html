@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <!-- Bootstrap Icons CDN link -->
+  <link rel="stylesheet" href="Css-Files/Rateus.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="googletranslate.css">
+  <link rel="stylesheet" href="Css-Files/popupfeedbacksctioncss.css">
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "o6kveYmOSDrs0l1Mg",
+      });
+    })();
+  </script>
+  <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>lowland</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <!-- transalator -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+  <!-- CSS Files -->
+   <link rel="stylesheet" href="index.css">
+  <link href="Css-Files/animate.min.css" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="remixicon/remixicon.css" rel="stylesheet">
+  <link href="swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="patient-portal.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="chatbox.css">
+  <!-- Google Fonts Link For Icons chatboxx -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="stylesheet" href="./Css-Files/aboutus.css" />
+  <link rel="stylesheet" href="./Css-Files/testimonial.css" />
+  <script src="chatboxx.js" defer></script>
+  <link rel="stylesheet" href="Css-Files/caduceus.css">
+  <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+    <script src="./js/emailvalidation.js"></script>
+</head>
+<body>
+  <script src="js/caduceus.js"></script>
+  <div class="pre">
+    <div class="loader"></div>
+  </div>
+  <script>
+    window.addEventListener('load', () => {
+      const preloader = document.querySelector('.pre');
+      if (preloader) {
+        preloader.classList.add('pre--hidden');
+        preloader.addEventListener('transitionend', () => {
+          preloader.remove();
+        });
+      }
+    });
+  </script>
+  <div id="caduceus-container">
+    <div class="rope"></div>
+    <img id="caduceus" src="img/2jghCPWR6g8S6w5Nv6bF6WCSHzJ.svg" alt="Caduceus">
+  </div>
+  <!-- ############# Header ############# -->
+  <header class="header_container nav-h">
+    <div class="img">
+      <img id="rd-logo" style="width: 90px; height: auto;" src="images/rd.png">
+    </div>
+    <nav class="nav_menu">
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="mobile-logo-text">lowland</div>
+      <ul class="nav_link vis-h">
+        <li><a href="index.html"><i class="bi bi-house-door-fill"></i> Home</a></li>
+        <li><a href="about.html"><i class="bi bi-info-circle-fill"></i> About</a></li>
+        <li><a href="news.html"><i class="bi bi-newspaper"></i> News</a></li>
+        <li><a href="dex.html"><i class="bi bi-gear"></i> Service</a></li>
+        <li><a href="portal.html"><i class="bi bi-person"></i> Patient Portal</a></li>
+        <li><a href="Html-Files/appointment.html"><i class="bi bi-person"></i> Appointment</a></li>
+        <li><a href="#doctors"><i class="bi bi-person-circle"></i> Doctor</a></li>
+        <li><a href="appointment.html"><i class="bi bi-telephone"></i> Contact us</a></li>
+        <li><a href="faq.html"><i class="bi bi-star"></i> faq</a></li>
+        <li><a href="log/login.html"><i class="bi bi-box-arrow-right"></i> Sign in/Sign up</a></li>
+        <a href="Html-Files/Doctor Experience.html"><button class="btn1">Find a Doctor</button></a>
+
+      </ul>
+    </nav>
+  </header>
+  <script>
+    function toggleMenu() {
+  const navLinks = document.querySelector('.nav_link');
+  navLinks.classList.toggle('active');
+}
+
+  </script>
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <a href="#appointment" class="appointment-btn scrollto">
+        <span class="d-md-inline">EMERGENCY</span>
+      </a>
+    </div>
+  </header>
+  <div class="container" style="display:flex ;">
+    <div class="content">
+  
+    <h1 style="font-size: 65px; margin-top: 10px;">
+        Welcome to <span style="color: #55a5ea;">lowland!</span> <br /> Your one-stop digital <br> healthcare destination
+    </h1>
+</div>
+
+    <img class="sec-img" src="images/rd.png" alt="" id="sec-img" style="padding: 0 0 0 0;"/>
+  </div>
+  <!-- End Home -->
+  <main id="main">
+    <!-- ############ Featured Services Section ############ -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon1"><i class="fas fa-heartbeat"></i></div>
+              <h4 class="title"><a href="checkup.html"> Normal checkup</a></h4>
+              <p class="description">Detect medical issues, identify risk factors and illnesses before they start to
+                cause problems.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">          
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon2"><i class="fas fa-dna"></i></div>
+              <h4 class="title"><a href="test.html">Blood Test</a></h4>
+              <p class="description"> Get your tests done to look for signs of disease or agents that cause disease.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon3"><i class="fas fa-temperature-high"></i></div>
+              <h4 class="title"><a href="">Body temperature</a></h4>
+              <p class="description">Body temperature can be anywhere from 97 F to 99 F. Babies and children have a
+                little higher range: 97.9 F to 100.4 F.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon4"><i class="fas fa-hand-holding-medical"></i></div>
+              <h4 class="title"><a href="medicine.html">Medicine use</a></h4>
+              <p class="description">Know what to use when to use and how to use.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Featured Services Section -->
+    <!-- ################### About Section ################### -->
+    <section id="about" class="about">
+      <div id="about-us">
+        <h1 class="about-us-heading">About Us</h1>
+        <section class="about-service">
+          <div class="sec-1">
+            <img src="img/about.png" class="about-img">
+          </div>
+          <div class="sec-2">
+            <div class="a-1">
+              <div class="a-l">
+                <div class="h-icon"><svg width="36px" height="36px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                      stroke="#2F7F81" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+              </div>
+              <div class="a-r">
+                <div class="head-1">HEALTH CHECKUPS</div>
+                <div class="head-2">Bootcamps, personalised check-ups,newsletter, it's all here</div>
+              </div>
+            </div>
+            <div class="a-2">
+              <div class="b-l">
+                <div class="a-icon">
+                  <svg height="28px" width="28px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                    <g>
+                      <polygon class="st0" points="501.539,169.221 453.886,86.7 303.669,173.449 303.669,0 208.365,0 208.365,173.479 58.114,86.73 
+		10.461,169.261 160.674,255.99 10.501,342.71 58.154,425.231 208.365,338.482 208.365,512 303.669,512 303.669,338.542 
+		453.846,425.271 501.499,342.74 351.267,255.99 	" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="b-r">
+                <div class="head-1">EMERGENCY WARDS</div>
+                <div class="head-2">Avoid rush and get immediate medical assistance, the wards and vacancies.</div>
+              </div>
+            </div>
+            <div class="a-3">
+              <div class="c-l">
+                <div class="q-icon">
+                  <svg width="44px" height="44px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>question</title>
+                    <g id="Page-1" stroke="none" stroke-width="0.5" fill="none" fill-rule="evenodd">
+                      <g id="add" fill="#2F7F81" transform="translate(42.666667, 42.666667)">
+                        <path
+                          d="M291.76704,163.504 C291.76704,177.01952 288.33216,188.82176 281.479253,198.90112 C275.828267,207.371093 266.358187,216.549547 253.042987,226.434987 C245.378987,231.682347 240.331947,236.618667 237.916587,241.257813 C234.87744,246.90624 233.376213,255.371093 233.376213,266.666667 L190.710827,266.666667 C190.710827,249.530027 192.53504,237.027413 196.165333,229.162667 C200.394453,219.679573 209.571627,210.098773 223.686187,200.42048 C230.350293,195.374933 235.188693,190.2368 238.214827,184.994773 C241.839787,179.143253 243.664,172.49216 243.664,165.028693 C243.664,153.13024 240.125013,144.26304 233.070293,138.404907 C227.4336,134.177067 220.56768,132.059947 212.501333,132.059947 C199.39328,132.059947 189.911467,136.398507 184.065067,145.069013 C179.829333,151.518293 177.7056,159.787733 177.7056,169.868587 L177.7056,170.173227 L132.34368,170.173227 C132.34368,143.751253 140.703147,123.790507 157.43488,110.274773 C171.554773,98.9922133 189.007787,93.3346133 209.77344,93.3346133 C227.933653,93.3346133 243.865813,96.86848 257.571627,103.9232 C280.37504,115.62624 291.76704,135.494827 291.76704,163.504 Z M426.666667,213.333333 C426.666667,331.153707 331.153707,426.666667 213.333333,426.666667 C95.51296,426.666667 3.55271368e-14,331.153707 3.55271368e-14,213.333333 C3.55271368e-14,95.51168 95.51296,3.55271368e-14 213.333333,3.55271368e-14 C331.153707,3.55271368e-14 426.666667,95.51168 426.666667,213.333333 Z M384,213.333333 C384,119.226667 307.43872,42.6666667 213.333333,42.6666667 C119.227947,42.6666667 42.6666667,119.226667 42.6666667,213.333333 C42.6666667,307.43872 119.227947,384 213.333333,384 C307.43872,384 384,307.43872 384,213.333333 Z M213.332053,282.666667 C198.60416,282.666667 186.665387,294.60544 186.665387,309.333333 C186.665387,324.061227 198.60416,336 213.332053,336 C228.059947,336 239.99872,324.061227 239.99872,309.333333 C239.99872,294.60544 228.059947,282.666667 213.332053,282.666667 Z"
+                          id="Shape">
+                        </path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="c-r">
+                <div class="head-1">SERVICES</div>
+                <div class="head-2">An apple a day won't keep lowland away. We are always here at your service, bringing
+                  to you the best facilities.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <script src="js/imageswap.js"></script>
+    <!-- End About Section -->
+    <!-- ################## Counts Section ################## -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+        <div class="row no-gutters">
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" id="abc">
+            <div class="count-box">
+              <i class="fas fa-user-md"></i>
+              <span data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Doctors Available</strong> <br><br>Doctors listed on our website.</p><br>
+              <a href="#doctors" class="count-a">Find out more &raquo;</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" id="abc">
+            <div class="count-box">
+              <i class="fas fa-bed"></i>
+              <span data-purecounter-start="0" data-purecounter-end="36" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Beds Available</strong> <br><br>Nearby emergency beds available.</p><br>
+              <a href="" class="count-a">Find out more &raquo;</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" id="abc">
+            <div class="count-box">
+              <i class="fas fa-flask-vial"></i>
+              <span data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Nearest Labs</strong> <br><br>Test labs and clinics near you.</p><br>
+              <a href="" class="count-a">Find out more &raquo;</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" id="abc">
+            <div class="count-box">
+              <i class="fas fa-trophy"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1250" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>User Reviews</strong><br> <br>Over 1K positive reviews.</p><br>
+              <a href="#test" class="count-a">Find out more &raquo;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+    <!-- #################### Services Section #################### -->
+    <center>
